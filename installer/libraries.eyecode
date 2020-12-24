@@ -439,7 +439,7 @@ function output_uninstall() {
 
 function path_account($user) {
 	include_once('settings.php');
-	$user_acronym = $user{0} . substr($user,-1) . substr(strlen($user),-1);
+	$user_acronym = $user[0] . substr($user,-1) . substr(strlen($user),-1);
 	return EYE_ROOT . '/' . REAL_EYE_ROOT . '/' . ACCOUNT_DIR . '/' . $user_acronym . '/' . $user . '.xml';
 }
 
@@ -525,9 +525,9 @@ function xml_xml2array($content) {
 		} else {
 			$tag = $full_tag;
 		}
-		if ($tag{0} == '/' || $full_tag{strlen($full_tag) - 1} == '/') {
+		if ($tag[0] == '/' || $full_tag[strlen($full_tag) - 1] == '/') {
 			$content = substr($end,1);
-		} elseif ($tag{0} == '?') {
+		} elseif ($tag[0] == '?') {
 			$content = substr(strstr($content,'?>'),2);
 		} elseif (substr($tag,0,3) == '!--') {
 			$content = substr(strstr($content,'-->'),3);
