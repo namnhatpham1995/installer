@@ -282,7 +282,7 @@ function lib_compat() {
 		<th colspan="2">' . lang_translate('installer-install-required','Required') . '</th>
 		<th>Yours</th>
 	</tr>';
-	$content .= private_lib_compat('mbstring.func_overload', '0', 'red');
+	#$content .= private_lib_compat('mbstring.func_overload', '0', 'red');
 	$content .= private_lib_compat('safe_mode', '0', 'red', version_compare(PHP_VERSION, '5.4.0', '<'));
 	$content .= private_lib_compat('session.use_cookies', '1', 'red');
 	$content .= private_lib_compat('zend.ze1_compatibility_mode', '0', 'red', version_compare(PHP_VERSION, '5.3.0', '<'));
