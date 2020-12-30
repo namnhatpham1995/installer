@@ -24,7 +24,7 @@ error_reporting(0);
 define('INSTALL_DIR','./installer/');
 define('INSTALL_INDEX','./index.html');
 define('INSTALL_INSTALLER',1);
-define('INSTALL_MD5', '7d4ab40b5800d0c09e11ce153dce7216');
+define('INSTALL_MD5', '7eb6403e531eb8124dc4517fe47950c3');
 define('INSTALL_PACKAGE','./package.eyepackage');
 define('INSTALL_SYSTEM',1);
 define('INSTALL_UPDATER',1);
